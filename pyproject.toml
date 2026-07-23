@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "praxis-forensic"
-version = "0.1.0"
+version = "0.1.1"
 description = "SMF Praxis Forensic Engineering vertical — persona + READ-only posture (private, commercial)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -22,11 +22,14 @@ classifiers = [
     "Private :: Do Not Upload",
 ]
 dependencies = [
-    "praxis-agent>=0.28.33",
+    "praxis-agent>=0.29.1",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=7", "ruff", "mypy"]
+
+[project.entry-points."praxis.verticals"]
+forensic = "hybridagent_praxis_forensic:register"
 
 [tool.setuptools.packages.find]
 include = ["hybridagent_praxis_forensic*"]
@@ -34,4 +37,6 @@ include = ["hybridagent_praxis_forensic*"]
 [tool.setuptools.package-data]
 "hybridagent_praxis_forensic" = [
     "personas/*/authority.py",
+    "packs/*/pack.json",
+    "packs/*/knowledge.md",
 ]
