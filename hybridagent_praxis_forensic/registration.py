@@ -11,7 +11,6 @@ from hybridagent.verticals.registry import (
     register_vertical_spec,
 )
 
-
 _FORENSIC_SPEC = VerticalSpec(
     name="forensic",
     persona_keyword="forensic",
