@@ -17,7 +17,7 @@ _FORENSIC_SPEC = VerticalSpec(
     compliance_mode="enforced",
     autonomous={RiskClass.READ},
     held={RiskClass.SEND, RiskClass.DESTRUCTIVE},
-    version="0.1.1",
+    version="0.1.2",
 )
 
 

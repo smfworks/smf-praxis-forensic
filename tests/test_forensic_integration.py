@@ -11,7 +11,7 @@ from hybridagent_praxis_forensic.personas.forensic_engineering.authority import 
 def test_forensic_registers_and_generic_evals_pass():
     spec = get_vertical_spec("forensic")
     assert spec is not None
-    assert spec.version == "0.1.1"
+    assert spec.version == "0.1.2"
     cases = [case for case in vertical_eval_cases() if case.id.startswith("vertical.forensic.")]
     assert {case.id for case in cases} == {
         "vertical.forensic.persona",
@@ -26,7 +26,7 @@ def test_forensic_authority_and_read_only_posture():
     assert authority.jurisdiction == "NY"
 
     vertical_pack = load_pack("forensic")
-    assert vertical_pack.version == "0.1.1"
+    assert vertical_pack.version == "0.1.2"
     assert vertical_pack.path is not None
     governance = GovernancePolicy(allowed_tools={"read_file"})
     apply_to_policy(vertical_pack, governance)
