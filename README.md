@@ -1,6 +1,6 @@
 # Praxis Forensic
 
-Private forensic-engineering vertical for Praxis. It provides the `forensic` vertical specification, packaged governance knowledge, and authority policy used by engineering-investigation workflows.
+SMF Praxis forensic compliance pack. It provides the `forensic` vertical specification, packaged governance knowledge, and authority policy used by engineering-investigation workflows.
 
 ## Installation
 
@@ -16,4 +16,8 @@ The distribution registers itself through the `praxis.verticals` entry-point gro
 
 Praxis may autonomously read evidence and draft analyses. External communications, representations, and destructive actions remain held for human approval.
 
-Proprietary software. See `LICENSE`.
+## License
+
+This pack is MIT-licensed. See `LICENSE`.
+
+This pack is informational tooling and not legal advice. Users should verify requirements with qualified counsel.
